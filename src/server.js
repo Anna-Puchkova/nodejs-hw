@@ -10,7 +10,6 @@ app.use(logger);
 app.use(
   cors({
     origin: '*',
-    methods: 'GET,PATCH,POST,DELETE',
   }),
 );
 

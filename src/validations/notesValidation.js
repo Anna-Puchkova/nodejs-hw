@@ -5,7 +5,7 @@ import { isValidObjectId } from 'mongoose';
 export const createNoteSchema = {
   [Segments.BODY]: Joi.object({
     title: Joi.string().min(1).max(100).required(),
-    content: Joi.string().max(100).empty(''),
+    content: Joi.string().empty(''),
     tag: Joi.string()
       .valid(...TAGS)
       .optional(),
@@ -35,7 +35,7 @@ export const noteIdSchema = {
 export const updateNoteSchema = {
   [Segments.BODY]: Joi.object({
     title: Joi.string().min(1).max(100),
-    content: Joi.string().max(100).allow(''),
+    content: Joi.string().allow(''),
     tag: Joi.string().valid(...TAGS),
   }).min(1),
   [Segments.PARAMS]: Joi.object({

@@ -1,0 +1,5 @@
+$kind: http-request
+name: notes/:noteId
+url: http://localhost:3000/notes/6a5264074da4dc5510eb3463
+method: GET
+order: 1593

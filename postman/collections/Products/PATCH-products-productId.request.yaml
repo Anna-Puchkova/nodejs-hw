@@ -1,0 +1,8 @@
+$kind: http-request
+name: PATCH/products/:productId
+url: http://localhost:3000/products/6a48d339da2f0b3beb151dee
+method: PATCH
+body:
+  type: json
+  content: "{\r\n    \"price\": 2000\r\n}"
+order: 3967

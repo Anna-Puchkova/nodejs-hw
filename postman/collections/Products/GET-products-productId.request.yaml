@@ -1,0 +1,5 @@
+$kind: http-request
+name: GET/products/:productId
+url: http://localhost:3000/products/60d0fe4f5311236168a109ca
+method: GET
+order: 2000

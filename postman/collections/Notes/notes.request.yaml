@@ -1,5 +1,7 @@
 $kind: http-request
 name: notes
-url: http://localhost:3000/notes
+url: http://localhost:3000/notes?page=aaaaaaa
 method: GET
+queryParams:
+  page: aaaaaaa
 order: 2000

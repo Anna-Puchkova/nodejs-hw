@@ -7,7 +7,9 @@ import { logger } from './middleware/logger.js';
 import { errorHandler } from './middleware/errorHandler.js';
 import { notFoundHandler } from './middleware/notFoundHandler.js';
 import notesRoutes from './routes/notesRoutes.js';
+import authRoutes from './routes/authRoutes.js';
 import { errors } from 'celebrate';
+import cookieParser from 'cookie-parser';
 const app = express();
 app.use(logger);
 app.use(express.json());
@@ -17,9 +19,10 @@ app.use(
     methods: 'GET,PATCH,POST,PUT,DELETE',
   }),
 );
-
+app.use(cookieParser());
 const PORT = process.env.PORT || 3000;
 
+app.use(authRoutes);
 app.use(notesRoutes);
 
 app.use(notFoundHandler);

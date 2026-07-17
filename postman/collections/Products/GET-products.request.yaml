@@ -1,5 +1,5 @@
 $kind: http-request
 name: GET/products
-url: http://localhost:3000/products
+url: "http://localhost:3000/products/:"
 method: GET
 order: 1000

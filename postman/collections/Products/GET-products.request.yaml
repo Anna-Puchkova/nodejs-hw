@@ -1,5 +1,9 @@
 $kind: http-request
 name: GET/products
-url: "http://localhost:3000/products/:"
-method: GET
+url: http://localhost:3000/products/:productId
+method: DELETE
+pathVariables:
+  - key: productId
+    value: 6a5b4a8ee8d87096e44bf78e
+    description: ""
 order: 1000

@@ -1,5 +1,5 @@
 $kind: http-request
-name: POST /auth/refresh
+name: POST /user/me/avatar
 url: ""
 method: GET
-order: 9000
+order: 6754

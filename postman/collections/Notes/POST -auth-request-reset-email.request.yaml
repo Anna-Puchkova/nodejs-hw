@@ -1,0 +1,12 @@
+$kind: http-request
+name: POST /auth/request-reset-email
+url: http://localhost:3000/auth/request-reset-email
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"email\": \"cohaje6258@jobraux.com\"\r
+
+    }"
+order: 8000
